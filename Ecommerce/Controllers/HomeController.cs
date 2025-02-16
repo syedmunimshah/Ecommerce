@@ -130,6 +130,7 @@ namespace Ecommerce.Controllers
         {
             var del = await _applicationDbContext.Users.FirstOrDefaultAsync(x=>x.Id==id);
             if (del == null)
+
             {
                 return NotFound(); 
             }
